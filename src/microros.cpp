@@ -45,7 +45,7 @@ bool microros_init() {
     RCCHECK(rcl_init_options_set_domain_id(&init_options, UXR_CLIENT_DOMAIN_ID_TO_OVERRIDE_WITH_ENV));
     RCCHECK(rclc_support_init_with_options(&support, 0, NULL, &init_options, &rcl_allocator));
 
-    RCCHECK(rclc_node_init_default(&node, NODE_NAME, "", &support));
+    RCCHECK(rclc_node_init_default(&node, NODE_NAME, "rosbot2", &support));
 
     if (not init_wheels_command_subscriber() or
         not init_wheels_state_publisher() or
