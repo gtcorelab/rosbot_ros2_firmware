@@ -22,7 +22,7 @@ You need to install following tools:
 
 ## Clone the repository
 ```bash
-git clone https://github.com/husarion/rosbot_ros2_firmware
+git clone https://github.com/gtcorelab/rosbot_ros2_firmware
 ```
 
 ## Loading dependencies
